@@ -1,0 +1,17 @@
+# Python Environments
+olist_env/
+venv/
+env/
+__pycache__/
+
+# Massive Data Files (Do not upload these to GitHub)
+*.csv
+*.xlsx
+*.parquet
+
+# App Secrets
+.streamlit/
+.env
+# Ignore old local model weights and generated outputs
+olist_custom_model/
+results/
