@@ -2,6 +2,9 @@
 
 An end-to-end Machine Learning and Data Engineering pipeline built on the Brazilian E-Commerce Public Dataset by Olist. This project extracts unstructured review data from a SQL Medallion architecture and processes it through a Multilingual Zero-Shot Transformer to automate customer support routing.
 
+The AI pipeline is deployed, can be verified from here and see for different review:
+https://ecommercesentimentanalysispipeline-9tt6evambyzhxhtpzrvtkd.streamlit.app/
+
 ## 🧠 Architecture & Tech Stack
 * **Data Engineering:** SQL Server (T-SQL) Medallion Architecture (Bronze, Silver, Gold), SQLAlchemy.
 * **Machine Learning:** PyTorch, Hugging Face Transformers (`mDeBERTa-v3-base`), Aspect-Based Sentiment Analysis (ABSA).
