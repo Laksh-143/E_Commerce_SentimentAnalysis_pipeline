@@ -10,7 +10,8 @@
 An end-to-end Machine Learning and Data Engineering pipeline built on the [Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce). This project processes 47,000+ unstructured customer reviews through a SQL Medallion architecture and a Multilingual Zero-Shot Transformer to automate customer support ticket routing — replacing a basic positive/negative sentiment classifier with a real operational tool.
 
 ---
-
+Deployed app 
+https://ecommercesentimentanalysispipeline-9tt6evambyzhxhtpzrvtkd.streamlit.app/
 ## 🧠 Architecture Overview
 
 ```
@@ -171,7 +172,6 @@ streamlit run interface.py
 
 - **Neutral class accuracy is low (F1: 0.05):** 3-star reviews contain genuinely ambiguous language that zero-shot models struggle to classify. In production, these would be routed to a human agent queue, which is already implemented in the pipeline.
 - **Short/misspelled text:** Extremely short reviews (e.g. a single misspelled word) can be confidently misclassified. The 60% confidence threshold mitigates this partially.
-- **No fine-tuning:** The model is used zero-shot. Fine-tuning `mDeBERTa-v3` on labeled Olist review data would likely push accuracy above 90%.
 
 ---
 
