@@ -187,9 +187,6 @@ TRUST_SERVER_CERTIFICATE=yes
 **Neutral class accuracy is low (F1: 0.05).** 3-star reviews are inherently ambiguous — "the product was fine but took forever" has no single correct ABSA label. These are correctly routed to a human agent queue in the pipeline, but counted as misclassifications in the evaluation.
 
 **Short or misspelled text can misclassify confidently.** Zero-shot models have no spell-check layer. The 60% confidence threshold catches many of these, but not all.
-
-**No fine-tuning was applied.** The model runs entirely zero-shot. Fine-tuning `mDeBERTa-v3` on a labelled subset of Olist reviews would likely push accuracy above 90%.
-
 ---
 
 ## 📁 Project Structure
